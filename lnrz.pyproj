@@ -36,13 +36,24 @@
     <Compile Include="lnrz\settings.py" />
     <Compile Include="lnrz\urls.py" />
     <Compile Include="lnrz\wsgi.py" />
+    <Compile Include="shortener\admin.py" />
+    <Compile Include="shortener\apps.py" />
+    <Compile Include="shortener\migrations\__init__.py" />
+    <Compile Include="shortener\models.py" />
+    <Compile Include="shortener\tests.py" />
+    <Compile Include="shortener\views.py" />
+    <Compile Include="shortener\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="lnrz\" />
+    <Folder Include="shortener\" />
+    <Folder Include="shortener\migrations\" />
+    <Folder Include="shortener\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
+    <Content Include="shortener\templates\index.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.html">
