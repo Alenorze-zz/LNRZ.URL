@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "lnrz", "lnrz.pyproj", "{D5A20C62-3032-4DF1-A869-A09CC1A61F92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5A20C62-3032-4DF1-A869-A09CC1A61F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A20C62-3032-4DF1-A869-A09CC1A61F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A20C62-3032-4DF1-A869-A09CC1A61F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A20C62-3032-4DF1-A869-A09CC1A61F92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A31D7E0-CEA0-4F52-A113-A5A37AF025B3}
+	EndGlobalSection
+EndGlobal
