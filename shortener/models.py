@@ -1,11 +1,7 @@
 from django.db import models
-import random
 
+from .utils import code_generator, create_shortcode
 
-
-def code_generator(size=6, chars='abcdtyuiopf'):
-    return ''.join(random.choice(chars) for _ in range (size))
-    
 
 class LnrzUrl(models.Model):
     url = models.CharField(max_length=220)
@@ -14,7 +10,8 @@ class LnrzUrl(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
-        self.shortcode = code_generator()
+        if self.shortcode is None or self.shortcode == '':
+            self.shortcode = create_shortcode(self)
         super(LnrzUrl, self).save(*args, **kwargs)
 
     def __str__(self):
