@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def lnrz_redirect_view(request, *args, **kwargs):
+    return HttpResponse("Hello")
+
+class LnrzCBView(View):
+    def get(self, request, *args, **kwargs):
+        return HttpResponse("Hell")

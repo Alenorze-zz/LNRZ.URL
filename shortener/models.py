@@ -25,13 +25,11 @@ class LnrzUrlManager(models.Manager):
 
 class LnrzUrl(models.Model):
     url       = models.CharField(max_length=220)
-    shortcode   = models.CharField(max_length=15, unique=True, blank=True)
+    shortcode = models.CharField(max_length=15, unique=True, blank=True)
     update    = models.DateTimeField(auto_now=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     active    = models.BooleanField(default=True)
-
-    objects = LnrzUrlManager()
-
+    objects   = LnrzUrlManager()
 
     def save(self, *args, **kwargs):
         if self.shortcode is None or self.shortcode == '':
