@@ -124,3 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+
+
+SHORTCODE_MAX = 15
+SHORTCODE_MIN = 6
