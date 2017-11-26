@@ -26,7 +26,7 @@ SECRET_KEY = 'beceb541-3d1b-4bc3-921d-07ea5f7c6dd6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.lnrz.com']
 
 
 # Application definition
