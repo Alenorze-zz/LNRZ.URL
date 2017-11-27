@@ -1,13 +1,6 @@
 from django import forms
 
+from .validators import validate_url, validate_dot_com
 
 class SubmitUrlForm(forms.Form):
-    url = forms.CharField(label='Submit URL')
-
-    def clean(self):
-        cleaned_data = super(SubmitUrlForm, self).clean()
-        url = cleaned_data['url']
-    
-    def clean_url(self):
-        url = self.cleaned_data['url']
-        return url
+    url = forms.CharField(label='Submit URL', validators=[validate_url, validate_dot_com])
