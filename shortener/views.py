@@ -36,7 +36,7 @@ class HomeView(View):
 
         return render(request, template, context)
 
-class LnrzCBView(View): #class based view
+class URLRedirectView(View): #class based view
     def get(self, request, shortcode=None, *args, **kwargs):
         obj = get_object_or_404(LnrzUrl, shortcode=shortcode)
         return HttpResponseRedirect(obj.url)
