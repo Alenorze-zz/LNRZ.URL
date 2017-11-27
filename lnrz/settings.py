@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django_hosts',
 
     'shortener',
+    'analytics'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -60,8 +61,8 @@ MIDDLEWARE_CLASSES = [
 ROOT_URLCONF = 'lnrz.urls'
 ROOT_HOSTCONF = 'lnrz.hosts'
 DEFAULT_HOST = 'www'
-PARENT_HOST = DEFAULT_REDIRECT_URL
-DEFAULT_REDIRECT_URL = "lnrz.com:8000" 
+DEFAULT_REDIRECT_URL = "http://www.lnrz.com:8000"
+PARENT_HOST = "lnrz.com:8000" 
 
 TEMPLATES = [
     {
