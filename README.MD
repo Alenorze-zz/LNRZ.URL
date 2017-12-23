@@ -1,4 +1,4 @@
-![LNRZ.URL Logo](https://imgur.com/XQBYL3y)
+![LNRZ.URL Logo](https://i.imgur.com/XQBYL3y.jpg)
 
 # LNRZ.URL
 
